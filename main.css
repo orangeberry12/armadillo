@@ -5,7 +5,25 @@
 	background-color: #42CFED;
 	width: 15vw;
 
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+	text-decoration: none;
+	color:var(--white);
+	border-radius: 15px;
+	padding: 10px;
 }
+
+
+#loginbutton:hover{
+	color: var(--lightblue);
+	background-color: var(--white);
+	border:var(--lightblue) 3px solid;
+}
+
+
 
 main{
 	margin: 15vh;
@@ -21,14 +39,14 @@ main{
 	grid-template-rows: 50px 300px;
 }
 
-#findsitter{
+#tab1{
 	grid-area: 1 / 1;
 	color: var(--white);
 	background-color: var(--orange);
 	border: var(--orange) 3px solid; 
 }
 
-#becomesitter{
+#tab2{
 	grid-area: 1 / 3;
 	color: var(--orange);
 	background-color: var(--white);
