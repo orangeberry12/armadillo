@@ -3,8 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Armadillo</title>
+    <link rel="stylesheet" href="masterstyle.css">
+    <link rel="stylesheet" href="main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates" rel="stylesheet">
 </head>
 <body>
-
+	<header>
+	    <div id = "logo">Armadillo</div>
+	    <div id = "loginbutton">Login</div>
+	</header>
+	<main>
+		<div id = "folder">
+			<!--tabs-->
+			<div class = "tab" id ="findsitter">Find A Sitter</div>
+			<div class = "tab" id = "becomesitter">Become a Sitter</div>
+			<!--form content-->
+			<div id = "centerfolder">
+				<div id = "folderbody">
+					<div class = "forms" id ="daterange">
+						<div>From:<input type="text" placeholder = "MM/DD/YYYY"></div>
+						<div>To:<input type="text" placeholder="MM/DD/YYYY"></div>
+					</div>
+					
+					<!--all the animals-->
+					<div class = "forms" id = "mypets">
+						For my pet: 
+						<input type="button" value="dog">
+						<input type="button" value="cat">
+						<input type="button" value="chicken">
+						<input type="button" value="+">
+					</div>
+					<div class = "forms" id = "location">
+						Near:
+						<input type="text" placeholder="Zip Code">
+					</div>
+					<div class = "forms" id = "searchbutton">
+						<input type="button" value="Search">
+					</div>
+				</div>
+			</div><!--folder-->
+		</div> <!--centerfolder-->
+	</main>
+	<footer>
+		
+	</footer>
 </body>
 </html>

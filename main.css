@@ -1,0 +1,114 @@
+/*Styles for the home page*/
+
+#loginbutton{
+	color: #FFFFFF;
+	background-color: #42CFED;
+	width: 15vw;
+
+}
+
+main{
+	margin: 15vh;
+	display: flex;
+	justify-content: center;
+	color:#FFFFFF;
+}
+
+#folder{
+	width: 100%;
+	display:grid;
+	grid-template-columns: 1fr 10px 1fr;
+	grid-template-rows: 50px 300px;
+}
+
+#findsitter{
+	grid-area: 1 / 1;
+	color: var(--white);
+	background-color: var(--orange);
+	border: var(--orange) 3px solid; 
+}
+
+#becomesitter{
+	grid-area: 1 / 3;
+	color: var(--orange);
+	background-color: var(--white);
+	border: var(--orange) 3px solid; 
+}
+
+.tab{
+	text-align: center;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#centerfolder{
+	grid-area: 2 / 1 / 3 / 4;
+	background-color: var(--orange);
+	border: var(--orange) 3px solid;
+
+	display: flex;
+	justify-content: center;
+}
+
+#folderbody{
+	
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	xpadding-left: 100px;
+	xpadding-top: 30px;
+
+	font-size: 24px;
+
+}
+
+#daterange{
+	display:flex;
+	flex-direction: row;
+	justify-content: left;
+}
+
+div.forms{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#mypets input[type="button"]{
+	text-align: center;
+	width: 65px;
+	height: 65px;
+	color: var(--lightblue);
+
+	border: var(--white) 3px solid;
+	border-radius: 32.5px;
+
+	margin-left: 20px;
+}
+
+input[type="text"]{
+	margin-left: 10px;
+	margin-right: 100px;
+	border: none;
+	outline: none;
+
+	height: 1.8em;
+	font-size: 16px;
+	padding-left: 8px;
+}
+
+input::placeholder{
+	color: var(--gray);
+
+	font-weight: lighter;
+	font-style: italic;
+}
+
+#searchbutton{
+	align-items: center;
+	text-align: center;
+}
