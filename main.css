@@ -39,17 +39,23 @@ main{
 	grid-template-rows: 50px 300px;
 }
 
+#centerfolder{
+	grid-area: 2 / 1 / 3 / 4;
+	background-color: var(--orange);
+	border: var(--orange) 3px solid;
+
+	display: flex;
+	justify-content: center;
+}
+
 #tab1{
 	grid-area: 1 / 1;
-	color: var(--white);
-	background-color: var(--orange);
+
 	border: var(--orange) 3px solid; 
 }
 
 #tab2{
 	grid-area: 1 / 3;
-	color: var(--orange);
-	background-color: var(--white);
 	border: var(--orange) 3px solid; 
 }
 
@@ -62,27 +68,27 @@ main{
 	align-items: center;
 	justify-content: center;
 
+	color: var(--orange);
+	background-color: var(--white);
+
 }
 
-#centerfolder{
-	grid-area: 2 / 1 / 3 / 4;
+.tab.active{
+	color: var(--white);
 	background-color: var(--orange);
-	border: var(--orange) 3px solid;
-
-	display: flex;
-	justify-content: center;
 }
 
-#folderbody{
+.tabcontent{
 	
+	display:none; /*default*/
+
+}
+
+.tabcontent.active{
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
-	xpadding-left: 100px;
-	xpadding-top: 30px;
-
 	font-size: 24px;
-
 }
 
 #daterange{

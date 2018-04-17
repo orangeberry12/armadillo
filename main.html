@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates" rel="stylesheet">
+
+
+    <script src="main.js"></script>
 </head>
 <body>
 	<header>
@@ -16,17 +19,17 @@
 	<main>
 		<div id = "folder">
 			<!--tabs-->
-			<div class = "tab" id ="tab1">Find A Sitter</div>
-			<div class = "tab" id = "tab2">Become a Sitter</div>
+			<div class = "tab active" id ="tab1" onclick ="switchTabs(event,'findsitterform')">Find A Sitter</div>
+			<div class = "tab" id = "tab2" onclick = "switchTabs(event,'becomesitter')">Become a Sitter</div>
+			
 			<!--form content-->
 			<div id = "centerfolder">
-				<div id = "folderbody">
+				<!--form content-->
+				<div class = "tabcontent active" id = "findsitterform">
 					<div class = "forms" id ="daterange">
 						<div>From:<input type="text" placeholder = "MM/DD/YYYY"></div>
 						<div>To:<input type="text" placeholder="MM/DD/YYYY"></div>
 					</div>
-					
-					<!--all the animals-->
 					<div class = "forms" id = "mypets">
 						For my pet: 
 						<input type="button" value="dog">
@@ -41,9 +44,30 @@
 					<div class = "forms" id = "searchbutton">
 						<input type="button" value="Search">
 					</div>
-				</div>
-			</div><!--folder-->
-		</div> <!--centerfolder-->
+				</div><!--find sitter-->
+
+				<div class = "tabcontent" id ="becomesitter">
+					<div class = "forms"> New to Armadillo?</div>
+					<div class = "forms" id = "email">
+						email
+						<input type="text" placeholder="you@gmail.com">
+					</div>
+					<div class = "forms" id = "password">
+						Password
+						<input type="text" >
+					</div>
+					<div class = "forms" id = "confirmpassword">
+						Confirm Password
+						<input type="text" >
+					</div>
+					<div class = "forms" id = "signinbutton">
+						<input type="button" value = "Create Profile">
+					</div>
+				</div><!--become sitter-->
+
+
+			</div><!--centerfolder-->
+		</div> <!--folder-->
 	</main>
 	<footer>
 		
