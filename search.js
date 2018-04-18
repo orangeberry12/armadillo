@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
-    var leftPanel = document.getElementById("bd");
+    var leftPanel = document.getElementById("leftmain");
 
     for (var i=0;i<10;i++){
         console.log(i+1);
-        var sitter = document.createElement("button");
+        var sitter = document.createElement("div");
 
         var number = document.createElement("div");
         number.textContent = ""+(i+1);
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         console.log(photo, photo.naturalWidth, photo.naturalHeight, photo.style.width, photo.height);
         var image = document.createElement("img");
         image.src = "image/Lukas.jpg";
-        resetImgSizeWH(image, image.naturalWidth, image.naturalHeight, 100, 100);
+        resetImgSizeWH(image, image.naturalWidth, image.naturalHeight, 180, 180);
         var rate = document.createElement("div");
         rate.className = "info";
         rate.textContent = "rate";
@@ -34,23 +34,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var arrow = document.createElement("div");
         arrow.className = "arrow";
         arrow.textContent = "arrow";
-        var empty = document.createElement("div");
-        empty.className = "empty";
-        empty.textContent = "empty";
+        // var empty = document.createElement("div");
+        // empty.className = "empty";
+        // empty.textContent = "empty";
 
         photo.appendChild(image);
         sitter.appendChild(number);
         sitter.appendChild(name);
         sitter.appendChild(photo);
         sitter.appendChild(rate);
-        sitter.appendChild(insurance);
-        sitter.appendChild(certificated);
-        sitter.appendChild(price);
+        // sitter.appendChild(insurance);
+        // sitter.appendChild(certificated);
+        // sitter.appendChild(price);
         sitter.appendChild(arrow);
-        sitter.appendChild(empty);
-        sitter.appendChild(empty);
-        sitter.appendChild(empty);
-        sitter.appendChild(empty);
+        // sitter.appendChild(empty);
+        // sitter.appendChild(empty);
+        // sitter.appendChild(empty);
+        // sitter.appendChild(empty);
         leftPanel.appendChild(sitter);
         sitter.className = "sitter-info";
     }
