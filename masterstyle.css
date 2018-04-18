@@ -6,6 +6,7 @@
 --orange: #FDC32A;
 --white: #FFFFFF;
 --gray: #c6c6c6;
+    --redorange: #c68316;
 }
 
 /*Fonts so Far*/
@@ -38,6 +39,7 @@ header #logo{
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-size: 5vw;
 	color: #A0CE46;
+
 }
 
 footer {
