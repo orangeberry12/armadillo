@@ -31,14 +31,28 @@ body{
 /* Modal Content */
 .modal-dialog,
 .modal-content {
-	height:80%;
+	height:100%;
+	overflow: auto;
 }
 
 
-.modal-body,
-.carousel-inner {
+
+.modal-body{
+	position: relative;
+	overflow: hidden;
 	height: calc(100% - 150px);
-	min-height: 500px;
+	width: auto;
+}
+
+.carousel-container
+{	
+	height: 100%;
+}
+
+.carousel-control
+{
+	position: absolute;
+	max-width: 10%;
 }
 
 
