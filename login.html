@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Armadillo Login</title>
+	<link rel="stylesheet" href="masterstyle.css">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates" rel="stylesheet">
+	<script src="main.js"></script>
+</head>
+<body>
+	<header>
+		<a id = "logo" href="main.html">Armadillo</a>
+	</header>
+	<main>
+		<div id = "folder">
+			<!--tabs-->
+			<div class = "tab active" id ="tab1" onclick ="switchTabs(event,'returninguser')">Returning User</div>
+			<div class = "tab" id = "tab2" onclick ="switchTabs(event,'newuser')">New User?</div>
+			<!--form content-->
+			<div id = "centerfolder">
+				<div class = "tabcontent active" id = "returninguser">
+					<div class = "forms" id = "username">
+						Email
+						<input type="text" placeholder="you@gmail.com">
+					</div>
+					<div class = "forms" id = "password">
+						Password
+						<input type="text" >
+					</div>
+					<div class = "forms" id = "signinbutton">
+						<button>Sign In</button>
+					</div>
+				</div>
+
+				<div class = "tabcontent" id="newuser">
+					<div class = "forms" id = "username">
+						Email
+						<input type="text" placeholder="you@gmail.com">
+					</div>
+					<div class = "forms" id = "password">
+						Password
+						<input type="text" >
+					</div>
+					<div class = "forms" id = "password">
+						Confirm Password
+						<input type="text" >
+					</div>
+					<div class = "forms" id = "signinbutton">
+						<button>Create Account</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+	<footer></footer>
+
+</body>
+</html>
