@@ -1,8 +1,32 @@
+var users = {
+    0: "Lukas",
+    1: "Jackie",
+    2: "Dyson",
+    3: "Jenny",
+    4: "Tuo",
+    5: "Rem",
+    6: "Oscar",
+    7: "Jason",
+    8: "Andrew",
+    9: "Jack",
+    10: "Williams",
+    11: "Jordan",
+    12: "Horton",
+    13: "Phillips",
+    14: "Burris",
+    15: "Willy",
+    16: "Lynn",
+    17: "Jaden",
+    18: "Pearce"
+}
+
 document.addEventListener("DOMContentLoaded", function(event) {
 
     var leftPanel = document.getElementById("leftmain");
 
     for (var i=0;i<10;i++){
+        var username = users[i];
+        console.log(username);
         console.log(i+1);
         var sitter = document.createElement("div");
 
@@ -11,14 +35,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         number.className = "number";
         var name = document.createElement("div");
         name.className = "sitter-name";
-        name.textContent = "Lukas";
+        name.textContent = username;
         var photo = document.createElement("div");
         photo.className = "sitter-image";
-        // photo.src = "image/Lukas.jpg";
-        console.log(photo, photo.naturalWidth, photo.naturalHeight, photo.style.width, photo.height);
         var image = document.createElement("img");
-        image.src = "image/Lukas.jpg";
-        resetImgSizeWH(image, image.naturalWidth, image.naturalHeight, 180, 180);
+        image.src = "image/"+username+ ".jpg";
+        // console.log(image, image.naturalWidth, image.naturalHeight, image.width, image.height);
+        resetImgSizeWH(image, image.naturalWidth, image.naturalHeight, 150,150);
         var rate = document.createElement("div");
         rate.className = "info";
         rate.textContent = "rate";

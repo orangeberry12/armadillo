@@ -5,7 +5,8 @@
     grid-template-areas:  'logo auto btn btn' ;
     grid-template-columns: 200px 1fr 100px 100px;
     align-items: left;
-    background-color: orange;
+    background-color: var(--green);
+    color: var(--white);
 }
 .navi-bar{
     display: grid;
@@ -47,8 +48,8 @@
     grid-template-columns: 500px 1fr;
 }
 .sitter-image{
-    /*width: 100px;*/
-    /*height: 100px;*/
+    width: 150px;
+    height: 150px;
     overflow: hidden;
 }
 .left-split{
@@ -60,12 +61,15 @@
 .number{
     font-size: 180px;
     grid-area: a;
+    color: #A0CE46;
 }
 .sitter-name{
     grid-area: b;
+    font-size: 20px;
 }
 .sitter-image{
     grid-area: c;
+    margin: 5px;
 }
 .info{
     grid-area: d;
@@ -83,9 +87,9 @@
     border-radius: 4px;
     font-size: 10px;
     border: none;
-    /*color: white;*/
+    color: white;
     margin: 5px 5px 5px 0px;
-    /*text-align: center;*/
+    text-align: center;
     text-decoration: none;
     display: grid;
     grid-template-areas:
@@ -94,7 +98,6 @@
             'a c d e'
             'a c d e'
             'a c d .';
-    /*grid-template-areas: "a b c d";*/
     grid-template-columns: 100px 1fr 1fr 20px;
     grid-template-rows: 10px 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
