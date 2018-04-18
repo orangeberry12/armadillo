@@ -28,6 +28,21 @@ body{
 	grid-template-rows: 7vw 1fr 5vw;
 }
 
+/* Modal Content */
+.modal-dialog,
+.modal-content {
+	height:80%;
+}
+
+
+.modal-body,
+.carousel-inner {
+	height: calc(100% - 150px);
+	min-height: 500px;
+}
+
+
+
 header{
 	display: flex;
 	flex-direction: row;
