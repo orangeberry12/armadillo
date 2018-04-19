@@ -19,6 +19,9 @@ var users = {
     17: "Jaden",
     18: "Pearce"
 }
+document.addEventListener("click", function(event) {
+    if (event.path[1].classList.contains("sitter-info")) {popupInfo(event.path[1].childNodes[1].textContent);}
+})
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -51,8 +54,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         rateinner.className = "stars-inner";
         // rateouter.style.width = (Math.floor(Math.random()*50)/10 * 20) + "%";
         rateinner.style.width = ((Math.floor(Math.random()*40)/10 * 20) + 20) + "%";
-        console.log(rate.clientTop);
-
         // rate.appendChild(rateouter);
         rate.appendChild(rateinner);
         var insurance = document.createElement("div");
@@ -69,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var arrow = document.createElement("img");
         arrow.className = "arrow";
         arrow.src = "image/Arrow_top.svg";
-        arrow.fill="white";
 
         photo.appendChild(image);
         sitter.appendChild(number);
@@ -108,6 +108,9 @@ function resetImgSizeWH(img, nw, nh, w, h) {
     }
 }
 
+function popupInfo(username) {
+    console.log(username);
+}
 // var splitter,cont1,cont2;
 // var last_x,window_width;
 
