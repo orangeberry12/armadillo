@@ -29,32 +29,98 @@ body{
 }
 
 /* Modal Content */
-.modal-dialog,
+.modal-lg,
 .modal-content {
-	height:100%;
+	position: absolute;
+	height:90%;
+	width: 90%;
+	top: 50%;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
 	overflow: auto;
+	justify-content: center;
 }
-
-
 
 .modal-body{
-	position: relative;
 	overflow: hidden;
 	height: calc(100% - 150px);
-	width: auto;
-}
-
-.carousel-container
-{	
-	height: 100%;
+	width: 100%;
 }
 
 .carousel-control
 {
-	position: absolute;
-	max-width: 10%;
+	max-width: 5%;
 }
 
+#myCarousel{
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-inner{
+	height: 100%
+}
+
+.carousel-inner > .item{
+	display: flex;
+	text-align: center;
+	height: 100%;
+}
+
+.cell{
+	display: inline-block;
+	vertical-align: top;
+	background-color: none;
+	width: 45%;
+	height: 100%;
+	margin: 2px;
+}
+
+.pictureContainer{
+
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.sitterImg{
+	margin: 10px;
+	margin-left: auto;
+    margin-right: auto;
+	background-size: 150px;
+  	width: 60%;
+  	height: 60%;
+}
+
+.button {
+    border-style: solid;
+    border-color: black;
+    color: black;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+}
+#book-button{
+	position: relative;
+	font-weight: bold;
+	z-index: 1;
+	bottom: 30px;
+	margin: auto;
+	padding: 10px 5px;
+	border-radius: 5%;
+	border-width: 2px;
+	width: 10px
+	height: 20px;
+}
+
+.text{
+	margin-top: 25px;
+	margin-right: 25px;
+    text-align: justify;
+}
 
 
 header{
