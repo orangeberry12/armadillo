@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="search.js"></script>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Search On Map</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="masterstyle.css">
+    <link type="text/css" rel="stylesheet" href="css/Search.css">
+</head>
+<body id="bd">
+<header>
+    <a id = "logo" href="main.html">Armadillo</a>
+    <a id = "loginbutton" href = "login.html"><button class="header-btn">Login</button></a>
+</header>
+
+<div class="navi-bar col-1">
+    <div class="filter" >
+        <div>Zip-code: </div>
+        <input type="number" value="02139">
+    </div>
+
+    <div class="filter" >
+        <div>Sorted by </div>
+        <input type="range" value="closest">
+    </div>
+    <div class="filter" >
+        <div>Price </div>
+        <input class="slider" type="range">
+        <!--<b>€ 10</b> <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> <b>€ 1000</b>-->
+    </div>
+    <div class="filter" >
+        <div>Rating </div>
+        <input type="range" value="closest">
+    </div>
+    <div class="filter" >
+        <div>From </div>
+        <input type="date" value="2018-04-18">
+    </div>
+    <div class="filter" >
+        <div>To </div>
+        <input type="date" value="2018-04-20">
+    </div>
+</div>
+
+<div class="main">
+
+    <div id="leftmain" class="left-split col-3"></div>
+    <div id="rightmain" class="right-split col-4">
+        <iframe class="map-container" frameborder="none" src="https://suntuo.maps.arcgis.com/apps/webappviewer/index.html?id=328714d7288b484eb63c23258e87c766"></iframe>
+
+    </div>
+</div>
+
+</body>
+
+<footer></footer>
+</html>

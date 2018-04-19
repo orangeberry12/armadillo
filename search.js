@@ -24,12 +24,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var leftPanel = document.getElementById("leftmain");
 
-    for (var i=0;i<10;i++){
+    for (var i=0;i<19;i++){
         var username = users[i];
-        console.log(username);
-        console.log(i+1);
         var sitter = document.createElement("div");
-
         var number = document.createElement("div");
         number.textContent = ""+(i+1);
         number.className = "number";
@@ -40,42 +37,53 @@ document.addEventListener("DOMContentLoaded", function(event) {
         photo.className = "sitter-image";
         var image = document.createElement("img");
         image.src = "image/"+username+ ".jpg";
-        // console.log(image, image.naturalWidth, image.naturalHeight, image.width, image.height);
-        resetImgSizeWH(image, image.naturalWidth, image.naturalHeight, 150,150);
+        resetImgSizeWH(image, image.naturalWidth, image.naturalHeight, 200,200);
         var rate = document.createElement("div");
-        rate.className = "info";
-        rate.textContent = "rate";
+        rate.className = "info rate";
+        var ratelen = Math.round(Math.random()*50)/10;
+        // for (var i=1; i<=ratelen;i++){
+        //     rate.textContent += "\2605";
+        // }
+        // rate.textContent = Math.floor(Math.random()*50)/10;
+        var rateinner = document.createElement("div");
+        // var rateouter = document.createElement("div");
+        // rateouter.className = "stars-outer";
+        rateinner.className = "stars-inner";
+        // rateouter.style.width = (Math.floor(Math.random()*50)/10 * 20) + "%";
+        rateinner.style.width = ((Math.floor(Math.random()*40)/10 * 20) + 20) + "%";
+        console.log(rate.clientTop);
+
+        // rate.appendChild(rateouter);
+        rate.appendChild(rateinner);
         var insurance = document.createElement("div");
-        insurance.className = "info";
+        insurance.className = "info insurance";
         insurance.textContent = "insurance";
+        if (Math.random()>0.5) {insurance.style.color="gray"};
         var certificated = document.createElement("div");
-        certificated.className = "info";
+        certificated.className = "info certificated";
         certificated.textContent = "certificated";
+        if (Math.random()>0.5) {certificated.style.color="gray"};
         var price = document.createElement("div");
-        price.className = "info";
-        price.textContent = "price";
-        var arrow = document.createElement("div");
+        price.className = "info price";
+        price.textContent = "$ "+ Math.floor(Math.random() * 300) + "/ day";
+        var arrow = document.createElement("img");
         arrow.className = "arrow";
-        arrow.textContent = "arrow";
-        // var empty = document.createElement("div");
-        // empty.className = "empty";
-        // empty.textContent = "empty";
+        arrow.src = "image/Arrow_top.svg";
+        arrow.fill="white";
 
         photo.appendChild(image);
         sitter.appendChild(number);
         sitter.appendChild(name);
         sitter.appendChild(photo);
         sitter.appendChild(rate);
-        // sitter.appendChild(insurance);
-        // sitter.appendChild(certificated);
-        // sitter.appendChild(price);
+        sitter.appendChild(insurance);
+        sitter.appendChild(certificated);
+        sitter.appendChild(price);
         sitter.appendChild(arrow);
-        // sitter.appendChild(empty);
-        // sitter.appendChild(empty);
-        // sitter.appendChild(empty);
-        // sitter.appendChild(empty);
         leftPanel.appendChild(sitter);
+
         sitter.className = "sitter-info";
+
     }
 });
 
