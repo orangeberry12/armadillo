@@ -28,17 +28,19 @@ body{
 	grid-template-rows: 7vw 1fr 5vw;
 }
 
-/* Modal Content */
-.modal-lg,
-.modal-content {
+/* Modal Content popup */
+.modal-lg{
 	position: absolute;
-	height:90%;
-	width: 90%;
-	top: 50%;
-  	left: 50%;
+	min-height:450px;
+	max-height: 600px;
  	transform: translate(-50%, -50%);
-	overflow: auto;
-	justify-content: center;
+ 	top: 50%;
+  	left: 50%;
+  	justify-content: center;
+}
+
+.modal-content {
+	position: relative;
 }
 
 .modal-body{
@@ -46,6 +48,39 @@ body{
 	height: calc(100% - 150px);
 	width: 100%;
 }
+
+/*Login MODAL*/
+
+.modal-dialog{
+	position: absolute;
+	min-height: 350px;
+	max-height: 450px;
+	max-width: 500px;
+ 	transform: translate(-50%, -50%);
+  	justify-content: center;
+}
+
+.modal-body-login{
+	overflow: hidden;
+	width: 100%;
+}
+
+/*allset MODAL*/
+
+
+.modal-body-allset{
+	display: flex;
+	min-height: 70%;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+/*PET SITTER CAROUSEL*/
 
 .carousel-control
 {
@@ -122,6 +157,71 @@ body{
     text-align: justify;
 }
 
+/*LOGIN MODAL*/
+
+.loginText{
+	margin-bottom:30px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 5vw;
+	color: var(--gray);
+}
+
+.form{
+	margin-left:20%;
+	margin-right:20%;
+}
+
+#logo{
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 5vw;
+	color: #A0CE46;
+}
+
+.login-footer{
+	position: static;
+}
+/*ALL SET MODAL*/
+
+.allSetContainer{
+	margin:auto;
+}
+.checkImg{
+	width: 150%;
+	height: 150%;
+}
+
+.checkContainer{
+
+	display: flex;
+	margin:auto;
+	flex-direction: row;
+	align-items: center;
+}
+
+.checkContainer-inner{
+	margin:auto;
+	display: flex;
+	align-items: center;
+}
+
+.allSetText{
+	font-weight: bolder;
+	margin-left: 10%;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 5vw;
+	color: var(--gray);
+}
+
+.allset-footer {
+	display: flex;
+	justify-content: center;
+}
+
+.congratulations-text{
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 3vw;
+	color: var(--gray);
+}
 
 header{
 	display: flex;
