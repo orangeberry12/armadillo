@@ -103,6 +103,8 @@ body{
 }
 
 .cell{
+	/*background-color: lightgrey;*/
+
 	display: inline-block;
 	vertical-align: top;
 	background-color: none;
@@ -186,16 +188,16 @@ body{
 	margin:auto;
 }
 .checkImg{
-	width: 150%;
-	height: 150%;
+	width: 100%;
+	height: 100%;
 }
 
 .checkContainer{
-
 	display: flex;
 	margin:auto;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
+	height: 250px;
 }
 
 .checkContainer-inner{
@@ -223,10 +225,65 @@ body{
 	color: var(--gray);
 }
 
+/*CONFIRMATION MODAL*/
+.modal-body-confirmation{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 10px;
+}
+
+.transition{
+	margin-right: 5%;
+	max-width: 11%;
+}
+
+.confirmationPopHeader{
+	margin-bottom: 20px;
+}
+
+.confirmationPopBody{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 15px;
+}
+
+.tableConfirmationPop{
+    word-wrap: break-word;
+	border-collapse: separate;
+  	border-spacing: 30px 0;
+}
+
+.tableConfirmationPop > *{
+	vertical-align: text-top;
+	padding: 10px 0;
+}
+
+.sitterImg-Confirmation{
+  	width: 40%;
+  	height: 40%;
+}
+.sitterImgCaption{
+	margin: auto;
+}
+
+.confirmation-footer {
+
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*CONFIRMATION MODAL*/
+.modal-body-userprofile{
+	margin: auto;
+}
+
+
+
 header{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	vertical-align: top;
 }
 
 header #logo{

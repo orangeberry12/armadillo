@@ -10,42 +10,31 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function goToDB(){
+			// console.log(document.getElementById('bd')),
+			// document.getElementById('bd').removeChild(document.getElementByClassName('modal'));
+			window.parent.location='dasboard.html';
+		}
+	</script>
 </head>
 
 
 
 <body>
-<div class="container">
-	<!-- Trigger the modal with a button -->
-	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">All_set</button>
-	<!-- Modal -->
-	<div class="modal fade" id="myModal" role="dialog">
-		<div class="modal-dialog modal-login">
-			<!-- Modal content-->
-			<div class="modal-content">
+	<div class="container1">
 
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<div class="congratulations-text text-center">CONGRATULATIONS</div>
-				</div>
-
-				<div class="modal-body-allset">
-
-					<div class="checkContainer">
-						<div class="checkContainer-inner">
-							<img src="all_set_check.svg" class= "checkImg" alt="checkbutton">
-							<div class="allSetText text-center">ALL <br> SET</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer allset-footer" align="center" >
-    				<button class="btn btnExtra btn-large btn-primary">GO TO DASHBOARD</button>
-				</div>
-				
+		<div class="congratulations-text text-center"><h2>CONGRATULATIONS</h2></div>
+		<div class="checkContainer">
+			<div class="checkContainer-inner">
+				<img src="all_set_check.svg" class= "checkImg" alt="checkbutton">
+				<div class="allSetText text-center">ALL <br> SET</div>
 			</div>
 		</div>
-	</div>
-</div>
+		<div class="text-center">
 
+			<button class="btn btnExtra btn-large btn-primary" data-dismiss="modal" onclick="goToDB()">GO TO DASHBOARD</button>
+		</div>
+	</div>
 </body>
 </html>
