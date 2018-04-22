@@ -36,6 +36,7 @@ header{
 
 header #logo{
 	font-family: 'Montserrat Alternates', sans-serif;
+	text-decoration: none;
 	font-size: 5vw;
 	color: #A0CE46;
 }
