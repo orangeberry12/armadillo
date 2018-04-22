@@ -15,7 +15,16 @@
 
 
 <body>
-	<div class="modal-header">
+<div class="container">
+	<!-- Trigger the modal with a button -->
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sitters</button>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-lg">
+			<!-- Modal content-->
+			<div class="modal-content">
+
+				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					<h4 class="modal-title">Pet sitters near you</h4>
 				</div>
@@ -32,7 +41,7 @@
 												<div class= "pictureContainer">
 													<strong>Noam Chomsky</strong>
 													<img class= "sitterImg" src="NoamChomsky.jpg" alt="Pet-Sitter">
-													<button class="button" id="book-button">book</button>
+													<button class="button" id="book-button">book <a href="#">help?</a></button>
 													<div class="rating">
 														<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
 													</div>
@@ -83,9 +92,7 @@
 												</div>
 											</div>											
 										</div>
-								
 									</div>
-
 									<div class="carousel-controls">
 										<!-- Left and right controls -->
 										<a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -98,24 +105,13 @@
 										</a>
 									</div>
 								</div>
-							
 						</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
-<div class="container">
-	<!-- Trigger the modal with a button -->
-	<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sitters</button>
-	<!-- Modal -->
-	<!-- <div class="modal fade" id="myModal" role="dialog"> -->
-		<!-- <div class="modal-lg"> -->
-			<!-- Modal content-->
-			<!-- <div class="modal-content"> -->
-
-				
-			<!-- </div> -->
-		<!-- </div> -->
-	<!-- </div> -->
+			</div>
+		</div>
+	</div>
 </div>
 
 </body>

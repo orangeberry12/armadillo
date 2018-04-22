@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Armadillo</title>
+	<meta charset="utf-8">
+	<!-- CSS load -->
+	<link rel="stylesheet" type="text/css" href="pop_up.css">
+	<!-- Bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function goToDB(){
+			window.location='dashboard.html';
+		}
+	</script>
+</head>
+
+
+
+<body>
+<div class="container">
+	<!-- Trigger the modal with a button -->
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="goToDB()">All_set</button>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog modal-login">
+			<!-- Modal content-->
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="congratulations-text text-center">CONGRATULATIONS</div>
+				</div>
+
+				<div class="modal-body-allset">
+
+					<div class="checkContainer">
+						<div class="checkContainer-inner">
+							<img src="all_set_check.svg" class= "checkImg" alt="checkbutton">
+							<div class="allSetText text-center">ALL <br> SET</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer allset-footer" align="center" >
+        				<button class="btn btnExtra btn-large btn-primary">GO TO DASHBOARD</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
