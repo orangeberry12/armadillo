@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Armadillo</title>
+	<meta charset="utf-8">
+	<!-- CSS load -->
+	<link rel="stylesheet" type="text/css" href="pop_up.css">
+	<!-- Bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+<div class="container">
+	<!-- Trigger the modal with a button -->
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create a Profile</button>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-lg">
+			<!-- Modal content-->
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title text-center"><strong>CREATE A USER PROFILE</strong></h3>
+				</div>
+				<div class="modal-body-userprofile">
+
+					<form role="form" class="form-inline form form-group">
+						<strong>Your Name</strong>
+						<div>
+							<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="First">
+
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+								<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Last">
+							</div>
+						</div>
+					</form>
+
+					<form role="form" class="form">
+						<div class="form-group">
+							<strong>Username</strong>
+							<input type="email" class="form-control" id="email" placeholder="foo bar">
+						</div>
+					</form>
+
+					<form role="form" class="form">
+						<div class="form-group">
+	  							<strong>Password</strong>
+	  							<div class="col-10">
+	    						<input class="form-control" type="password" value="hunter2" id="example-password-input">
+	 						</div>
+						</div>
+					</form>
+
+
+					<form role="form" class="form-inline form form-group">
+						<strong>Your Email</strong>
+						<div>
+							<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Jane Doe">
+
+							<label class="sr-only" for="inlineFormInputGroup">Username</label>
+								<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+								<div class="input-group-addon">@</div>
+								<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+							</div>
+						</div>
+					</form>
+						
+					<form role="form" class="form">
+						<div class="form-group">
+							<strong>Your phone Number</strong>
+							<input type="password" class="form-control" id="pwd" placeholder="phone.nr xxx-xxx-xxxx">
+						</div>
+
+						<div class="form-group">
+							<strong>Your Location</strong>							
+							<input type="password" class="form-control" id="pwd" placeholder="moon">
+						</div>
+
+						<div class="form-group">
+							<strong>Your Language</strong>							
+							<input type="password" class="form-control" id="pwd" placeholder="klingon">
+						</div>
+
+						<div class="checkbox">
+							<label><input type="checkbox"> Remember me</label>
+						</div>
+					</form>
+					
+				</div>
+				<div class="modal-footer" align="center">
+			    	<div class="text-center">
+			    		<button class="btn btnExtra btn-large btn-primary ">SIGN UP!</button>
+		    		</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
