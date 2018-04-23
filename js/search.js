@@ -119,7 +119,7 @@ function popupInfo(username) {
 	
 	var frameinside=document.createElement("iframe");
 	frameinside.className="modal-content";
-	frameinside.src="sitters_available1.html";
+	frameinside.src="sitters_available_popup.html";
 //	frameinside.src="main.html";
 	frameinside.setAttribute("frameborder","none");
 	popupwindow.appendChild(frameinside);
