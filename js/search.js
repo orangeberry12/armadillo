@@ -124,6 +124,7 @@ function popupInfo(username) {
 	frameinside.setAttribute("frameborder","none");
 	popupwindow.appendChild(frameinside);
     document.getElementById("bd").appendChild(popupwindow);
+	
 }
 // var splitter,cont1,cont2;
 // var last_x,window_width;
