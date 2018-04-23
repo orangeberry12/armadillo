@@ -119,11 +119,12 @@ function popupInfo(username) {
 	
 	var frameinside=document.createElement("iframe");
 	frameinside.className="modal-content";
-	frameinside.src="sitters_available_popup.html";
+	frameinside.src="sitters_available1.html";
 //	frameinside.src="main.html";
 	frameinside.setAttribute("frameborder","none");
 	popupwindow.appendChild(frameinside);
     document.getElementById("bd").appendChild(popupwindow);
+	
 }
 // var splitter,cont1,cont2;
 // var last_x,window_width;
